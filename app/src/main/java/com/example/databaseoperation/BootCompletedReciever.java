@@ -15,15 +15,15 @@ public class BootCompletedReciever extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boot_completed_reciever);
 
-        broadcast=new bootBroadcast();
+      //  broadcast=new bootBroadcast();
 
-        registerReceiver(broadcast,new IntentFilter(Intent.ACTION_BATTERY_OKAY));
+      //  registerReceiver(broadcast,new IntentFilter(Intent.ACTION_BATTERY_OKAY));
 
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        unregisterReceiver(broadcast);
-    }
+
+   // protected void onStop() {
+      //  super.onStop();
+       // unregisterReceiver(broadcast);
+  //  }
 }
